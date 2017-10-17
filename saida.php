@@ -13,14 +13,7 @@ $cont = 0;
 <head>
 	<title>Tabuada</title>
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <style type="text/css">
 
@@ -36,6 +29,16 @@ $cont = 0;
     font-weight: bold;
     color: white;
   }
+  #principio{
+    background-color: white;
+  }
+  
+  tr:nth-child(even) {
+  background-color: white;
+}
+tr:nth-child(odd) {
+  background-color: #C0C0C0;
+}
 
 	</style>
 
@@ -50,7 +53,7 @@ $cont = 0;
 	$cont++;
 	echo "<table class='table table-striped' border='0'  align='center' style='width:10%; height:5%;'>";
 	echo "<thead>";
-	echo "<th colspan=2>";
+	echo "<th id=principio colspan=2>";
 	echo "Tabuada do " . $cont;
 	echo "</th>";
 	echo "<tr>";
